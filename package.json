@@ -1,40 +1,53 @@
 {
-  "name": "sails-auth",
-  "version": "2.1.1",
-  "description": "Passport-based User Authentication system for sails.js applications.",
-  "main": "dist/api/hooks/auth/index.js",
-  "scripts": {
-    "test": "mocha --reporter spec --compilers js:babel/register",
-    "prepublish": "gulp"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/tjwebb/sails-auth.git"
-  },
-  "keywords": [
-    "sails",
-    "sails.js",
-    "authentication",
-    "auth",
-    "passport",
-    "oauth",
-    "oauth2",
-    "openid",
-    "passport.js",
-    "generator",
-    "google",
-    "facebook",
-    "twitter",
-    "linkedin",
-    "instagram",
-    "youtube"
+  "_args": [
+    [
+      "sails-auth@~2.1.1",
+      "/www/5m/rest-api"
+    ]
   ],
-  "author": "Travis Webb <me@traviswebb.com>",
-  "license": "MIT",
+  "_from": "sails-auth@>=2.1.1 <2.2.0",
+  "_id": "sails-auth@2.1.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/sails-auth",
+  "_nodeVersion": "0.12.7",
+  "_npmUser": {
+    "email": "me@traviswebb.com",
+    "name": "tjwebb"
+  },
+  "_npmVersion": "2.11.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "sails-auth",
+    "raw": "sails-auth@~2.1.1",
+    "rawSpec": "~2.1.1",
+    "scope": null,
+    "spec": ">=2.1.1 <2.2.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/",
+    "/sails-permissions"
+  ],
+  "_resolved": "https://registry.npmjs.org/sails-auth/-/sails-auth-2.1.1.tgz",
+  "_shasum": "cb460ffce58bd3d66c9c694c4845325c6a049a26",
+  "_shrinkwrap": null,
+  "_spec": "sails-auth@~2.1.1",
+  "_where": "/www/5m/rest-api",
+  "author": {
+    "email": "me@traviswebb.com",
+    "name": "Travis Webb"
+  },
   "bugs": {
     "url": "https://github.com/tjwebb/sails-auth/issues"
   },
-  "homepage": "https://github.com/tjwebb/sails-auth",
+  "bundleDependencies": [
+    "bcryptjs",
+    "lodash",
+    "passport",
+    "passport-http",
+    "passport-local"
+  ],
   "dependencies": {
     "bcryptjs": "^2.2",
     "lodash": "^3.10",
@@ -43,29 +56,68 @@
     "passport-http": "^0.3",
     "passport-local": "^1.0.0"
   },
-  "bundledDependencies": [
-    "bcryptjs",
-    "lodash",
-    "passport",
-    "passport-http",
-    "passport-local"
-  ],
+  "description": "Passport-based User Authentication system for sails.js applications.",
   "devDependencies": {
     "babel": "^5.8.21",
     "gulp": "^3.9.0",
     "gulp-babel": "^5.2.1",
     "mocha": "^1.21.4",
-    "sails": "balderdashy/sails",
+    "sails": "github:balderdashy/sails",
     "socket.io-client": "^1.3.5",
     "supertest": "^0.15.0",
     "waterline-sqlite3": "^0.12.1"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "cb460ffce58bd3d66c9c694c4845325c6a049a26",
+    "tarball": "http://registry.npmjs.org/sails-auth/-/sails-auth-2.1.1.tgz"
   },
   "engines": {
     "node": ">= 0.12",
     "npm": ">= 2.11"
   },
+  "gitHead": "731b2d26954500def8c8d1d59cf9246e2c608efc",
+  "homepage": "https://github.com/tjwebb/sails-auth",
+  "keywords": [
+    "auth",
+    "authentication",
+    "facebook",
+    "generator",
+    "google",
+    "instagram",
+    "linkedin",
+    "oauth",
+    "oauth2",
+    "openid",
+    "passport",
+    "passport.js",
+    "sails",
+    "sails.js",
+    "twitter",
+    "youtube"
+  ],
+  "license": "MIT",
+  "main": "dist/api/hooks/auth/index.js",
+  "maintainers": [
+    {
+      "name": "tjwebb",
+      "email": "me@traviswebb.com"
+    }
+  ],
+  "name": "sails-auth",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tjwebb/sails-auth.git"
+  },
   "sails": {
-    "isHook": true,
-    "hookName": "auth"
-  }
+    "hookName": "auth",
+    "isHook": true
+  },
+  "scripts": {
+    "prepublish": "gulp",
+    "test": "mocha --reporter spec --compilers js:babel/register"
+  },
+  "version": "2.1.1"
 }
